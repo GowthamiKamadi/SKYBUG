@@ -48,10 +48,10 @@ def del_one():
         tasks.remove(task)
 
         update_listbox()
-lbl_title = tkinter.Label(root, text="To-do-list",foreground="white", font="algerian,40",bg="black", width=20)
+lbl_title = tkinter.Label(root, text="To-do-list",foreground="white", font="algerian,40",bg="black", width=30)
 lbl_title.pack()
 
-lbl_display = tkinter.Label(root, text=" ",foreground="white", bg="black",width=20)
+lbl_display = tkinter.Label(root, text=" ",foreground="white", bg="black",width=30)
 lbl_display.pack()
 
 txt_input=tkinter.Entry(root,width=40)
@@ -72,10 +72,10 @@ btn_del_one.pack()
 btn_exit=tkinter.Button(root, text="exit",fg="yellow", bg="black",font="algerian", width=20,command=exit)
 btn_exit.pack()
 
-lbl_display = tkinter.Label(root, text=" ",foreground="white", bg="black",width=20)
+lbl_display = tkinter.Label(root, text=" ",foreground="white", bg="black",width=33)
 lbl_display.pack()
 
-lb_tasks= tkinter.Listbox(root,width=40,height=35)
+lb_tasks= tkinter.Listbox(root,width=40,height=20)
 lb_tasks.pack()
 
 root.mainloop()
